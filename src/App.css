@@ -311,6 +311,74 @@ body {
 
 /* ----------------------- */
 
+/* Section styles */
+.section {
+  margin-bottom: 4rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+/* Grid styles */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+/* Project card styles */
+.project-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  background-color: var(--muted);
+  height: 256px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-period {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+
 
 
 /* Responsive styles */
@@ -336,7 +404,10 @@ body {
   .hero-subtitle {
     font-size: 1.75rem;
   }
- 
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 769px) {
