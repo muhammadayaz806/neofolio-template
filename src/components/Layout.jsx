@@ -1,5 +1,5 @@
 import Sidebar from './Sidebar'
-
+import Footer from './Footer'
 const Layout = ({ children }) => {
   return (
     <div className="app-layout">
@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
         <main className="main-content-inner">
           {children}
         </main>
+        <Footer />
       </div>
     </div>
   )
