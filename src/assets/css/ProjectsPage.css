@@ -1,0 +1,10 @@
+
+
+.section-description {
+  color: var(--muted-foreground, #737373);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 600px;
+}

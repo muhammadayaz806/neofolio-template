@@ -1,5 +1,6 @@
 import { Home, Briefcase, ShoppingCart, User, FileText, MessageCircle, Twitter, Facebook, Dribbble, Sun, Moon } from 'lucide-react'
 import { useState } from 'react'
+import { NavLink } from "react-router-dom";
 import profileImg from '../assets/profile-avatar.avif';
 
 const Sidebar = () => {
@@ -11,18 +12,18 @@ const Sidebar = () => {
   }
 
   const navigationItems = [
-    { icon: Home, label: 'Homepage', href: '#'},
-    { icon: Briefcase, label: 'Projects', href: '#'},
-    { icon: ShoppingCart, label: 'Store', href: '#'},
-    { icon: User, label: 'About', href: '#'},
-    { icon: FileText, label: 'Blog', href: '#'},
-    { icon: MessageCircle, label: 'Contact', href: '#'}
+    { icon: Home, label: 'Homepage', to: '/', end: true },
+    { icon: Briefcase, label: 'Projects', to: '/projects' },
+    { icon: ShoppingCart, label: 'Store', to: '/services' },
+    { icon: User, label: 'About', to: '/about' },
+    { icon: FileText, label: 'Blog', to: '/blog' },
+    { icon: MessageCircle, label: 'Contact', to: '/contact' }
   ]
 
   const socialItems = [
-    { icon: Twitter, label: 'Twitter', href: '#'},
-    { icon: Facebook, label: 'Facebook', href: '#'},
-    { icon: Dribbble, label: 'Dribbble', href: '#'}
+    { icon: Twitter, label: 'Twitter', href: '#' },
+    { icon: Facebook, label: 'Facebook', href: '#' },
+    { icon: Dribbble, label: 'Dribbble', href: '#' }
   ]
 
   return (
@@ -48,12 +49,16 @@ const Sidebar = () => {
         <ul className="nav-list">
           {navigationItems.map((item, index) => (
             <li key={item.label} className="nav-item">
-              <a href={item.href}>
+              <NavLink
+                to={item.to}
+                end={item.end}
+                className={({ isActive }) => isActive ? "active-link" : ""}
+              >
                 <div className="nav-icon">
                   <item.icon className="w-5 h-5" />
                 </div>
                 <span>{item.label}</span>
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -62,12 +67,11 @@ const Sidebar = () => {
         <div className="social-section">
           <h4 className="social-title">SOCIAL</h4>
           <ul className="nav-list">
-            {socialItems.map((item, index) => (
+            {socialItems.map((item) => (
               <li key={item.label} className="nav-item">
                 <a href={item.href}>
                   <div className="nav-icon">
                     <item.icon className="w-5 h-5" />
-                    <span className="nav-badge">{item.badge}</span>
                   </div>
                   <span>{item.label}</span>
                 </a>

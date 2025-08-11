@@ -187,6 +187,12 @@ body {
   background-color: var(--background);
 }
 
+.active-link {
+  background-color: #fff;
+  color: #0a0a0a;
+  font-weight: 600;
+}
+
 .nav-icon {
   width: 20px;
   height: 20px;
