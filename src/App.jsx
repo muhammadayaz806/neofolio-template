@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import ProjectsPage from "./components/ProjectsPage";
+import StorePage from "./components/StorePage";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               }
             />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/store" element={<StorePage />} />
           </Routes>
         </div>
       </Layout>

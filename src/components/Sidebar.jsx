@@ -14,7 +14,7 @@ const Sidebar = () => {
   const navigationItems = [
     { icon: Home, label: 'Homepage', to: '/', end: true },
     { icon: Briefcase, label: 'Projects', to: '/projects' },
-    { icon: ShoppingCart, label: 'Store', to: '/services' },
+    { icon: ShoppingCart, label: 'Store', to: '/store' },
     { icon: User, label: 'About', to: '/about' },
     { icon: FileText, label: 'Blog', to: '/blog' },
     { icon: MessageCircle, label: 'Contact', to: '/contact' }
