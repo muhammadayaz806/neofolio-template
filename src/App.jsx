@@ -9,6 +9,7 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import ProjectsPage from "./components/ProjectsPage";
 import StorePage from "./components/StorePage";
+import AboutPage from "./assets/pages/AboutPage.jsx";
 import "./App.css";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/store" element={<StorePage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </div>
       </Layout>

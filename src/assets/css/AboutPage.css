@@ -1,0 +1,37 @@
+.text-container{
+    width: 65%;
+}
+
+.text-container .about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.text-container .about-subtitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--yellow-600);
+  margin-bottom: 1.5rem;
+}
+
+.text-container .about-description {
+  font-size: 1.15rem;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.about-description p{
+    margin-bottom: 1rem;
+}
+
+.about-image{
+    width: 35%;
+}
+
+.about-image img{
+    height: 340px;
+    border-radius: 10px;
+}

@@ -711,6 +711,10 @@ body {
   gap: 1rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -721,6 +725,10 @@ body {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
 }
 
 .text-sm {
