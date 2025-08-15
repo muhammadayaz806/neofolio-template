@@ -34,6 +34,43 @@ const AboutPage = () => {
         </div>
       </section>
       <Services />
+      <section className="tools-section">
+        <div>
+          <h2 className="tools-title">Tools and Techs</h2>
+          <div className="tools-grid">
+            <div className="tools-item">
+              <div className="tools-name">
+                <p>Figma</p>
+              </div>
+            </div>
+            <div className="tools-item">
+              <div className="tools-name">
+                <p>Next.js</p>
+              </div>
+            </div>
+            <div className="tools-item">
+              <div className="tools-name">
+                <p>Webflow</p>
+              </div>
+            </div>
+            <div className="tools-item">
+              <div className="tools-name">
+                <p>Slack</p>
+              </div>
+            </div>
+            <div className="tools-item">
+              <div className="tools-name">
+                <p>ChatGPT</p>
+              </div>
+            </div>
+            <div className="tools-item">
+              <div className="tools-name">
+                <p>Visual Studio Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Contact />
     </>
   );

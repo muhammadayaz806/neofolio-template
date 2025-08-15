@@ -35,3 +35,31 @@
     height: 340px;
     border-radius: 10px;
 }
+
+.tools-section {
+  padding: 1.5rem;
+}
+
+.tools-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tools-item {
+  padding: 1rem;
+  background: var(--sidebar);
+  border-radius: 10px;
+}
+
+.tools-name{
+  font-weight: 500;
+
+}
