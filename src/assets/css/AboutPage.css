@@ -63,3 +63,19 @@
   font-weight: 500;
 
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .text-container{
+    width: 100%;
+  }
+
+  .about-image{
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-image img{
+    height: auto;
+  }
+}

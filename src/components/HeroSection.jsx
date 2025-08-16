@@ -9,8 +9,10 @@ const HeroSection = () => {
     <section className="hero-section">
       <div>
         <h1 className="hero-title">Hello! I'm Ayaz</h1>
-        <div className="flex flex-col items-start gap-12">
-          <h2 className="hero-subtitle">Frontend Developer</h2>
+        <div className="flex items-start gap-12">
+          <div>
+            <h2 className="hero-subtitle">Frontend Developer</h2>
+          </div>
 
           <div className="hero-location">
             <MapPin className="w-5 h-5" />
