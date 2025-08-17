@@ -1,10 +1,13 @@
 import Contact from "./Contact";
 import "../assets/css/StorePage.css";
-
+import { useEffect } from "react";
 
 const url = '/assets/images/products';
 
 const StorePage = () => {
+  useEffect(() => {
+    document.title = "Store - Neofolio";
+  }, []);
   const Products = [
     {
       id: 1,

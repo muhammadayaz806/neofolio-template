@@ -35,7 +35,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <button className="btn contact-btn">
+        <button className="btn contact-btn contact-btn-special">
           Schedule a call
         </button>
       </div>

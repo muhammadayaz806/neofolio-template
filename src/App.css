@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 :root {
@@ -32,8 +33,8 @@
   --sidebar-accent-foreground: #0a0a0a;
   --sidebar-border: #e5e5e5;
   --sidebar-ring: #737373;
-  --yellow-600: #AB9B60;
-  --yellow-700: #B3A470;
+  --yellow-600: #ab9b60;
+  --yellow-700: #b3a470;
   --radius: 1rem;
 }
 
@@ -197,11 +198,30 @@ body {
   font-weight: 600;
 }
 
+.dark .nav-item a:hover {
+  background-color: var(--border);
+}
+
+.dark .sidebar .active-link {
+  color: white !important;
+  background-color: var(--border);
+}
+
+.dark .sidebar .active-link:hover {
+  color: #fff !important;
+  background: var(--border);
+}
+
+
 .nav-icon {
   width: 20px;
   height: 20px;
   position: relative;
   color: var(--muted-foreground);
+}
+
+.dark .nav-icon {
+  color: white !important;
 }
 
 .social-section {
@@ -285,6 +305,10 @@ body {
   font-weight: 700;
   /* margin-bottom: 1rem; */
   line-height: 1.1;
+}
+
+.hero-sub-div{
+  width: 700px;
 }
 
 .hero-subtitle {
@@ -480,12 +504,12 @@ body {
 }
 
 .star.filled {
-  color: #FF8904;
-  fill: #FF8904;
+  color: #ff8904;
+  fill: #ff8904;
 }
 
 .star.empty {
-  color: #FF8904;
+  color: #ff8904;
 }
 
 /* Blog styles */
@@ -607,13 +631,23 @@ body {
   color: var(--yellow-600);
 }
 
-.contact-btn{
+.contact-btn {
   background-color: var(--background);
   border: 1px solid var(--border);
 }
 
 .contact-btn:hover {
   background-color: var(--muted);
+}
+
+.dark .contact-btn-special {
+  background: var(--muted);
+  color: white;
+}
+
+.dark .contact-btn-special:hover:enabled {
+  background: #0a0a0a;
+  color: white;
 }
 
 /* Footer styles */
@@ -673,7 +707,6 @@ body {
     padding: 5rem;
     margin: 20px;
   }
-  
 
   .hero-title {
     font-size: 2rem;
@@ -691,7 +724,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .blog-image {
     width: 100%;
     height: 200px;
@@ -700,7 +733,7 @@ body {
   .contact-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-content {
     flex-direction: column;
     gap: 0.5rem;
@@ -739,7 +772,7 @@ body {
   gap: 1rem;
 }
 
-.gap-8{
+.gap-8 {
   gap: 2rem;
 }
 
@@ -755,7 +788,11 @@ body {
   margin-bottom: 2rem;
 }
 
-.mb-32{
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-32 {
   margin-bottom: 8rem;
 }
 

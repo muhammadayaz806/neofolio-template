@@ -1,8 +1,12 @@
 import "../css/AboutPage.css";
 import Services from "../../components/Services";
 import Contact from "../../components/Contact";
+import { useEffect } from "react";
 
 const AboutPage = () => {
+  useEffect(() => {
+    document.title = "About - Neofolio";
+  }, []);
   return (
     <>
       <section className="about-section flex gap-8 mb-32">

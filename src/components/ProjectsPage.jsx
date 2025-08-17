@@ -1,5 +1,6 @@
 import Contact from "./Contact";
 import "../assets/css/ProjectsPage.css";
+import { useEffect } from "react";
 
 import img1 from "../assets/images/01.webp";
 import img2 from "../assets/images/02.webp";
@@ -8,6 +9,9 @@ import img4 from "../assets/images/04.webp";
 import img5 from "../assets/images/05.webp";
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    document.title = "Projects - Neofolio";
+  }, []);
   const projects = [
     {
       id: 1,
