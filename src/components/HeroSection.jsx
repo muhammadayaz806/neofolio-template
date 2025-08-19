@@ -1,6 +1,8 @@
 import { MapPin, Copy } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const copyEmail = () => {
     navigator.clipboard.writeText("ayazmughal806@gmail.com");
   };
@@ -27,7 +29,12 @@ const HeroSection = () => {
         </p>
 
         <div className="hero-actions">
-          <button className="btn btn-primary">About</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => navigate("/about")}
+          >
+            About
+          </button>
           <button className="btn btn-outline" onClick={copyEmail}>
             <Copy className="w-4 h-4" />
             <span>Copy mail</span>
