@@ -170,6 +170,11 @@ body {
   background: var(--border);
 }
 
+.dark .hamburger svg,
+.dark .sidebar-close svg {
+  color: #fff;
+  fill: #fff;
+}
 
 .nav-icon {
   width: 20px;
