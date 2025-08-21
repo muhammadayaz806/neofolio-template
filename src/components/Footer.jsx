@@ -10,7 +10,7 @@ const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            bundui.io
+            Muhammad Ayaz
           </a>
         </p>
       </div>
