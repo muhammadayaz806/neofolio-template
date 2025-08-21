@@ -9,7 +9,7 @@ const AboutPage = () => {
   }, []);
   return (
     <>
-      <section className="about-section flex gap-8 mb-32">
+      <section className="about-section gap-8 mb-32">
         <div className="text-container">
           <h1 className="about-title">Hello! I'm Ayaz</h1>
           <div>

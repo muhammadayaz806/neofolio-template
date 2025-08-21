@@ -1,3 +1,7 @@
+.about-section{
+    display: flex;
+  }
+
 .text-container{
     width: 65%;
 }
@@ -66,6 +70,10 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .about-section{
+    display: block;
+  }
+
   .text-container{
     width: 100%;
   }
