@@ -65,7 +65,7 @@ body {
 /* Sidebar styles */
 .sidebar {
   width: 256px;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--sidebar);
   display: flex;
   flex-direction: column;
@@ -659,6 +659,7 @@ body {
   .sidebar.sidebar--open {
     transform: translateX(0);
     z-index: 100;
+    height: -webkit-fill-available;
   }
 
   .main-content {
