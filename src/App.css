@@ -679,6 +679,10 @@ body {
     font-size: 1.75rem;
   }
 
+  .project-image{
+    height: auto;
+  }
+
   .grid-cols-2 {
     grid-template-columns: 1fr;
   }
